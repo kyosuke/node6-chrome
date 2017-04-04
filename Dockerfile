@@ -7,3 +7,6 @@ RUN apt-get update && apt-get install -y google-chrome-stable
 RUN rm /etc/apt/sources.list.d/google-chrome.list
 
 ENV CHROME_BIN /usr/bin/google-chrome
+
+# Install aws-cli
+RUN apt-get update && apt-get install -y awscli

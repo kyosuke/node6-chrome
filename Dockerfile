@@ -6,6 +6,7 @@ RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
  && apt-get update && apt-get install -y \
   awscli \
   google-chrome-stable \
+  zip \
  && rm /etc/apt/sources.list.d/google-chrome.list \
  && rm -rf /var/lib/apt/lists/*
 
